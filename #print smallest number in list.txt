@@ -1,0 +1,28 @@
+#print smallest number in list
+
+l=[1,2,3,4,5]
+print(min(l)))
+
+-----------------
+l.sort()
+print(l)
+print(l[0])
+
+------------
+dummy=[]
+n=int(input("enter the number of elements:"))
+for i in range(0,n):
+    ele=int(input("enter the element to enter to list {} index".format(i)))
+    dummy.append(ele)
+print(dummy)
+print(min(dummy))
+---------------------
+list1 = [1, 2, 3, 6]
+def mylist(list1):
+     minimum = list1[0]
+     for i in list1:
+
+         if i < minimum:
+             minimum = i
+     return minimum
+print("minvalve in list is", mylist(list1))

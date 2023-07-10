@@ -1,0 +1,74 @@
+#print maximum number in list
+
+using built in methods
+
+1)using max method
+l = [1, 2, 3, 4, 5, 6, 7, 9]
+print(max(l))
+---
+a=input("enter the number\n").split() #to read multiple inputs from keyboard #split(separator,maxsplit)
+print(a)
+print(max(a))
+
+2)sort method
+l = [1, 2, 3, 4, 5, 6, 7, 9]
+l.sort()
+print(l)    #sort l = [1, 2, 3, 4, 5, 6, 7, 9]--acending order
+print(l[-1])
+
+-------------------------------------
+without built in methods
+
+1,2,3,5
+max=1(first elemt)
+iterate through list
+1,1--equal
+1,2--2 is greater max=2
+2,3--3 is greater max=3
+3,6--6 is greater max =6
+max--->6
+
+
+1)for and if loop
+
+l1 = [1, 2, 3, 4, 5, 6, 7, 9, 19]
+max1 = l1[0]
+for i in l1:
+    if i > max1:
+        max1 = i
+print("the maximum number is", max1)
+
+
+2) function and loop
+
+list1 = [1, 2, 3, 6]
+def mylist(list1):
+     maximum = list1[0]
+     for i in list1:
+
+         if i > maximum:
+             maximum = i
+     return maximum
+print("maxvalve in list is", mylist(list1))
+
+--------------------------------------------------------
+Taking user input ,create list and finding max value
+
+dummy=[]
+n = int(input("Enter the number of elements \n"))
+
+for i in range(0,n):
+    elem = int(input("Enter element - {} - ".format(i)))
+    #appending this input to the list
+    dummy.append(elem)
+print(dummy)
+print(max(dummy))
+----------
+max1 = dummy[0]
+for i in dummy:
+    if i > max1:
+        max1 = i
+print("the maximum number is", max1)
+
+
+

@@ -1,0 +1,16 @@
+#sum the elements in list
+
+#built in method
+
+l=[1,2,3]
+print(sum(l))
+
+---------------
+#without builtin method
+
+total=0
+l=[1,2,3]
+for ele in range(0, len(l)):
+    total=total+l[ele]
+
+print(total)
